@@ -7,17 +7,703 @@
   <!-- Google AdSense Verification -->
   <meta name="google-adsense-account" content="ca-pub-2512583157301031">
 
-  <title>Your Website</title>
+  <title>Techno School Of Innovation | Quality Education for Bright Future</title>
+  <meta name="description" content="Techno School Of Innovation is a modern school offering quality education from NUR to VIII with smart classes, trained teachers, strong academics, co-curricular activities, and student-focused learning." />
+  <meta name="keywords" content="school website, admission open, nursery to class 8 school, modern school, smart class school, techno school of innovation" />
+  <meta name="author" content="Techno School Of Innovation" />
 
   <!-- Google AdSense Auto Ads -->
   <script async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2512583157301031"
     crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f4f8ff;
+      color: #1b1b1b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d47a1, #1565c0);
+      color: white;
+      padding: 18px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.85;
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(13, 71, 161, 0.78), rgba(21, 101, 192, 0.75)),
+                  url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 90px 20px 80px;
+    }
+
+    .hero .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 0 auto 22px;
+      font-size: 1.05rem;
+      opacity: 0.97;
+    }
+
+    .btns {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #ffca28;
+      color: #222;
+    }
+
+    .btn-primary:hover {
+      background: #ffd54f;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.16);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.35);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.24);
+      transform: translateY(-2px);
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 65px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      color: #0d47a1;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      max-width: 850px;
+      margin: auto;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #0d47a1;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      border-left: 5px solid #0d47a1;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      align-items: center;
+    }
+
+    .about-box p,
+    .long-text p {
+      margin-bottom: 14px;
+      color: #333;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .stat {
+      background: white;
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+    }
+
+    .stat h3 {
+      color: #0d47a1;
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+
+    .admission-box {
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: white;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 12px 28px rgba(13,71,161,0.25);
+    }
+
+    .admission-box h3 {
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+    }
+
+    .admission-box ul {
+      padding-left: 20px;
+      margin: 12px 0 18px;
+    }
+
+    .admission-box li {
+      margin-bottom: 8px;
+    }
+
+    .contact-list p {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background: #0b2f6a;
+      color: #e8eefc;
+      padding: 45px 20px 25px;
+      margin-top: 30px;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .footer h3, .footer h4 {
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .footer p, .footer li {
+      font-size: 0.95rem;
+      color: #d7e3ff;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer a {
+      color: #d7e3ff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .copyright {
+      max-width: 1200px;
+      margin: 20px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      text-align: center;
+      font-size: 0.9rem;
+      color: #c6d8ff;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #0d47a1;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 0.88rem;
+      }
+
+      .section-title h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <h1>My Website</h1>
-  <p>Approval ke baad yahan Google Auto Ads show ho sakte hain.</p>
+  <header>
+    <div class="nav">
+      <div class="logo">Techno School Of Innovation</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#classes">Classes</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+        <a href="#policy">Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <span class="badge">Admissions Open for New Session</span>
+      <h1>Quality Education for a Bright and Successful Future</h1>
+      <p>
+        Techno School Of Innovation is dedicated to nurturing young minds with modern teaching methods,
+        strong academic foundations, moral values, creativity, discipline, and practical learning experiences.
+        We provide a safe, engaging, and growth-oriented environment for students from NUR to Class VIII.
+      </p>
+      <div class="btns">
+        <a href="#admission" class="btn btn-primary">Apply for Admission</a>
+        <a href="#contact" class="btn btn-secondary">Contact School</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section-title">
+      <h2>About Our School</h2>
+      <p>
+        Techno School Of Innovation is a student-focused institution that believes every child has unique potential.
+        Our mission is to combine academic excellence with character building, digital awareness, and creative learning.
+      </p>
+    </div>
+
+    <div class="two-col">
+      <div class="card about-box">
+        <h3>Our Vision</h3>
+        <p>
+          Our vision is to become a trusted center of learning where children grow into confident, disciplined,
+          and responsible citizens. We aim to provide strong conceptual understanding, communication skills,
+          problem-solving ability, and value-based education.
+        </p>
+        <p>
+          We emphasize both scholastic and co-scholastic development, ensuring that students become capable of
+          facing future academic and life challenges with confidence and integrity.
+        </p>
+      </div>
+
+      <div>
+        <div class="stats">
+          <div class="stat">
+            <h3>NUR–VIII</h3>
+            <p>Classes Available</p>
+          </div>
+          <div class="stat">
+            <h3>Smart</h3>
+            <p>Modern Learning</p>
+          </div>
+          <div class="stat">
+            <h3>Safe</h3>
+            <p>Student Environment</p>
+          </div>
+          <div class="stat">
+            <h3>Holistic</h3>
+            <p>Overall Growth</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="classes" style="background:#eef5ff;">
+    <div class="section-title">
+      <h2>Academic Programs & Classes</h2>
+      <p>
+        Our school offers age-appropriate, concept-based learning from foundational classes to middle school level.
+        We focus on literacy, numeracy, language development, general awareness, science learning, and personality development.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Pre-Primary (NUR, LKG, UKG)</h3>
+        <p>
+          Early childhood learning is designed to build confidence, communication, social interaction, and
+          foundational reading and number skills through activity-based methods and playful learning.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Primary Section (I to V)</h3>
+        <p>
+          Students are guided through strong basics in English, Mathematics, Environmental Studies, Hindi,
+          General Knowledge, and creative activities. We focus on understanding rather than rote memorization.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Middle Section (VI to VIII)</h3>
+        <p>
+          The curriculum becomes more structured with Science, Social Science, Mathematics, English, Hindi,
+          and project-based learning. Students are encouraged to ask questions, analyze concepts, and improve communication.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="facilities">
+    <div class="section-title">
+      <h2>School Facilities</h2>
+      <p>
+        We provide a learning-friendly atmosphere supported by modern infrastructure and child-centric resources.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card highlight">
+        <h3>Smart Class Learning</h3>
+        <p>
+          Digital learning tools and visual content help students understand concepts in a better and more engaging way.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Qualified Teachers</h3>
+        <p>
+          Dedicated teachers guide students with patience, subject knowledge, and regular assessment-based support.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Safe & Disciplined Campus</h3>
+        <p>
+          Student safety, discipline, and a positive environment are core priorities in our school culture.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Activity-Based Learning</h3>
+        <p>
+          Art, storytelling, speaking practice, projects, and classroom activities improve confidence and creativity.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Regular Parent Communication</h3>
+        <p>
+          PTM meetings, progress discussions, and timely updates help parents stay connected with their child’s development.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Balanced Development</h3>
+        <p>
+          We support academic growth, moral values, communication, discipline, leadership, and social behavior.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="admission" style="background:#eef5ff;">
+    <div class="section-title">
+      <h2>Admission Information</h2>
+      <p>
+        Admissions are open for the current academic session. Parents are encouraged to visit the school campus,
+        understand our academic approach, and complete the admission process on time.
+      </p>
+    </div>
+
+    <div class="admission-box">
+      <h3>Admission Process</h3>
+      <ul>
+        <li>Visit the school office or contact the admission help desk.</li>
+        <li>Collect or fill the admission inquiry/application form.</li>
+        <li>Submit student details and required documents.</li>
+        <li>Attend interaction/assessment if applicable for the class level.</li>
+        <li>Complete fee payment and confirm admission.</li>
+      </ul>
+      <p><strong>Required Documents:</strong> Birth certificate, previous report card (if applicable), passport size photographs, transfer certificate (if applicable), and parent contact details.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Why Parents Choose Our School</h2>
+      <p>
+        Parents look for trust, academic support, discipline, safety, and value-based growth. Our school is built
+        around these essential expectations with a practical and caring approach.
+      </p>
+    </div>
+
+    <div class="long-text card">
+      <p>
+        At Techno School Of Innovation, we understand that school education forms the foundation of a child’s future.
+        That is why we focus not only on completing a syllabus but also on making sure every child actually understands
+        what they learn. Our teaching style encourages curiosity, clear concepts, classroom participation, reading habits,
+        communication development, and respectful behavior.
+      </p>
+      <p>
+        In the early classes, children need confidence, routine, and emotional comfort. We therefore create a welcoming
+        environment where children feel motivated to attend school and participate in class activities. In higher classes,
+        students need clarity in subjects, exam preparation, time management, and guidance. Our teachers work consistently
+        to improve these areas through explanation, revision, class tests, and feedback.
+      </p>
+      <p>
+        We also believe that education should help children become responsible human beings. Therefore, moral values,
+        discipline, cleanliness, punctuality, kindness, teamwork, and respect are important parts of our school culture.
+        This balanced approach supports long-term academic and personal success.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="contact" style="background:#eef5ff;">
+    <div class="section-title">
+      <h2>Contact Information</h2>
+      <p>
+        For admissions, academic inquiries, fee-related questions, or school visit scheduling, parents can contact the school directly.
+      </p>
+    </div>
+
+    <div class="two-col">
+      <div class="card contact-list">
+        <h3>School Contact Details</h3>
+        <p><strong>School Name:</strong> Techno School Of Innovation</p>
+        <p><strong>Classes:</strong> NUR to VIII</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> info@technoschoolofinnovation.com</p>
+        <p><strong>Address:</strong> Your School Address, Your City, Your State, India</p>
+        <p><strong>Working Hours:</strong> Monday to Saturday, 8:00 AM to 3:00 PM</p>
+      </div>
+
+      <div class="card">
+        <h3>Parent Support & Guidance</h3>
+        <p>
+          We encourage parents to stay actively involved in their child’s educational journey. Our support team helps
+          with admission queries, academic concerns, PTM schedules, document requirements, and general school information.
+        </p>
+        <p>
+          For better communication, parents should ensure that the registered phone number remains active and reachable.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="policy">
+    <div class="section-title">
+      <h2>Privacy Policy</h2>
+      <p>
+        This Privacy Policy explains how information may be collected, used, and protected when users visit the school website.
+      </p>
+    </div>
+
+    <div class="card long-text">
+      <p>
+        We may collect basic information voluntarily submitted by parents or visitors through contact forms, inquiry forms,
+        or communication channels. This may include name, phone number, email address, student class preference, and general
+        admission-related details. This information is used only for responding to inquiries, providing school-related information,
+        and supporting the admission process.
+      </p>
+      <p>
+        We do not intentionally collect sensitive personal information through this website unless it is required for official
+        school communication. Any information submitted is handled responsibly and used only for school-related purposes.
+        We may update this policy from time to time to reflect operational or legal changes.
+      </p>
+      <p>
+        This website may use third-party services such as analytics, hosting platforms, or advertising tools including Google
+        AdSense after approval. These services may use cookies or similar technologies to improve user experience and serve relevant content.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="background:#eef5ff;">
+    <div class="section-title">
+      <h2>Terms & Conditions</h2>
+      <p>
+        By using this website, visitors agree to the following general terms and usage conditions.
+      </p>
+    </div>
+
+    <div class="card long-text">
+      <p>
+        The content provided on this website is for general informational purposes regarding school academics, admissions,
+        policies, communication, and institutional details. While we aim to keep the information accurate and updated,
+        changes may occur in admission schedules, fee structures, school timings, academic activities, or other notices.
+      </p>
+      <p>
+        Visitors are advised to contact the school office directly for final confirmation of important details.
+        Unauthorized copying, misuse, or misleading reproduction of website content without permission is discouraged.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Disclaimer</h2>
+      <p>
+        This disclaimer outlines the limits of responsibility related to website content and external services.
+      </p>
+    </div>
+
+    <div class="card long-text">
+      <p>
+        The information published on this website is intended to help parents and visitors understand the school’s
+        academic offerings, admission process, facilities, and general communication channels. Although reasonable care
+        is taken to keep the content accurate, the school does not guarantee that all information will remain unchanged at all times.
+      </p>
+      <p>
+        Visitors should verify critical details such as admission dates, fee payment deadlines, examination notices,
+        and document requirements directly from the school office. The school is not liable for any decision made solely
+        on the basis of website content without official confirmation.
+      </p>
+      <p>
+        If Google AdSense or other third-party tools are used in the future, ads or external content may appear automatically
+        based on platform policies and user relevance.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Techno School Of Innovation</h3>
+        <p>
+          A modern learning institution focused on quality education, student growth, discipline, creativity, and strong values.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About School</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#admission">Admission</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Parent Information</h4>
+        <ul>
+          <li>Admission Guidance</li>
+          <li>Fee & Notice Updates</li>
+          <li>PTM Communication</li>
+          <li>Academic Support</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal Pages</h4>
+        <ul>
+          <li><a href="#policy">Privacy Policy</a></li>
+          <li><a href="#policy">Terms & Conditions</a></li>
+          <li><a href="#policy">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © 2026 Techno School Of Innovation. All Rights Reserved.
+    </div>
+  </footer>
 
 </body>
 </html>
